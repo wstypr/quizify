@@ -6,33 +6,14 @@
   color: red;
 }
 
-/* .form-control::placeholder {
-  color: white !important;
-} */
-
-/* ddddddddddddd */
-form {
-  max-width: 620px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.answer-container {
+  cursor: pointer;
 }
 
-.question-container {
-  max-width: 620px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.answer-container:hover {
+  background-color: rgb(175, 119, 14);
 }
 
-.question-card {
-  border: 1px solid red;
-}
-
-.right-ans {
-  color: green;
-}
-
-.wrong-ans {
-  color: red;
+.main-title {
+  font-size: 8em;
 }
