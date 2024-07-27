@@ -17,6 +17,7 @@
       <div class="container">
         <a href="/index.html" class="navbar-brand fw-bolder">Quizify</a>
         <div class="d-flex gap-4">
+          <a href="/play.html" class="nav-link">Play</a>
           <a href="/compose.html" class="nav-link">Compose</a>
           <a href="/about.html" class="nav-link">About</a>
         </div>
@@ -24,51 +25,29 @@
     </nav>
     <main>
       <div class="container">
-        <div class="row mb-4">
-          <div class="col">
-            <div
-              class="question-container p-4 border rounded-4 fs-4"
-              id="question"
-            ></div>
-          </div>
-        </div>
-        <div class="row g-3" id="answerContainer">
-          <!-- <div class="col-md-6">
-            <div class="answer-container p-3 rounded-4 fs-5 border">
-              <ol type="A" start="1">
-                <li id="ans0"></li>
-              </ol>
+        <div class="row align-items-center h-100">
+          <div class="col text-center">
+            <div class="mb-5 w-50 text-start m-auto">
+              <p>
+                The initial idea of Quizify is a "Who wants to be a
+                millionaire"-like quiz with question composer feature.
+              </p>
+              <p>
+                The "admin" can create many questions with different difficulty
+                category and the game will serve randomly chosen 10 questions
+                consist of 3 easy question, 3 medium ones and the rest are
+                difficult questions. The current version only accomodate the
+                question composer feature.
+              </p>
+              <p>Enjoy.</p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="answer-container p-3 rounded-4 fs-5 border">
-              <ol type="A" start="2">
-                <li id="ans1"></li>
-              </ol>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="answer-container p-3 rounded-4 fs-5 border">
-              <ol type="A" start="3">
-                <li id="ans2"></li>
-              </ol>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="answer-container p-3 rounded-4 fs-5 border">
-              <ol type="A" start="4">
-                <li id="ans3"></li>
-              </ol>
-            </div>
-          </div> -->
         </div>
       </div>
     </main>
     <footer class="text-center py-3 fs-6">
       wstypr - Devscale Assignment #2
     </footer>
-
-    <script type="module" src="./src/play.ts"></script>
 
     <!-- bootstrap -->
     <script
