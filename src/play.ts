@@ -67,7 +67,7 @@ async function play() {
       showModal("YOU WIN 👏");
     }
     console.log("true");
-    play();
+    renderNextQuestion(questions, shuffledQuestionNumArr.pop()!);
   }
 
   function handleFalse() {
