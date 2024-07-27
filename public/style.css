@@ -1,3 +1,16 @@
+.card-body {
+  min-height: 100px;
+}
+
+.btn-delete-question:hover {
+  color: red;
+}
+
+/* .form-control::placeholder {
+  color: white !important;
+} */
+
+/* ddddddddddddd */
 form {
   max-width: 620px;
   display: flex;
