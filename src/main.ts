@@ -1,10 +1,6 @@
-import {
-  addQuestion,
-  deleteQuestion,
-  getAllQuestions,
-} from "../libs/fetchData";
+import { addQuestion, deleteQuestion, getAllQuestions } from "./libs/fetchData";
 import { Question } from "../types/entity";
-import { createQuestionItem } from "../libs/createQuestionItem";
+import { createQuestionItem } from "./libs/createQuestionItem";
 
 const form = document.getElementById("formNewQuestion") as HTMLFormElement;
 form.addEventListener("submit", handleAdd);

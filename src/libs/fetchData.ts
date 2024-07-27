@@ -1,4 +1,4 @@
-import { Question, ResQuestion } from "./../types/entity";
+import { Question, ResQuestion } from "../../types/entity";
 
 const API_URL = "https://v1.appbackend.io/v1/rows/mV2zMgxpMHkF";
 

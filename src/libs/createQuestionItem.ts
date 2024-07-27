@@ -1,4 +1,4 @@
-import { Question } from "./../types/entity";
+import { Question } from "../../types/entity";
 
 export function createQuestionItem(
   question: Question,
