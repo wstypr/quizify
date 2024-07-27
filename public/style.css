@@ -4,3 +4,22 @@ form {
   flex-direction: column;
   gap: 8px;
 }
+
+.question-container {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.question-card {
+  border: 1px solid red;
+}
+
+.right-ans {
+  color: green;
+}
+
+.wrong-ans {
+  color: red;
+}

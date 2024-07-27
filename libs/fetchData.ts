@@ -20,3 +20,16 @@ export async function addQuestion(question: Question) {
   const data = await res.json();
   return data;
 }
+
+export async function deleteQuestion(id: string) {
+  console.log(id);
+  const res = await fetch(API_URL, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify([id]),
+  });
+  const data = await res.json();
+  return data;
+}
