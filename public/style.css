@@ -1,3 +1,8 @@
+body {
+  font-family: "Play", sans-serif !important;
+  font-weight: 400;
+}
+
 .card-body {
   min-height: 100px;
 }
@@ -12,8 +17,4 @@
 
 .answer-container:hover {
   background-color: rgb(175, 119, 14);
-}
-
-.main-title {
-  font-size: 8em;
 }
