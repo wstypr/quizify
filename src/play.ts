@@ -91,7 +91,7 @@ async function play() {
     p.classList.add("text-light", "fs-1", "text-center", "fw-bold", "mb-3");
     const playAgain = document.createElement("button");
     playAgain.textContent = "Play Again";
-    playAgain.classList.add("btn", "btn-lg", "btn-outline-primary", "w-25");
+    playAgain.classList.add("btn", "btn-lg", "btn-outline-primary", "px-5");
     playAgain.addEventListener("click", () => {
       window.location.reload();
     });
