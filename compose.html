@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <nav class="navbar shadow mb-5 bg-body-primary">
+    <nav class="navbar shadow mb-3 bg-body-primary">
       <div class="container">
         <a href="/index.html" class="navbar-brand fw-bolder">QZF</a>
         <div class="d-flex gap-4">
@@ -32,55 +32,57 @@
     </nav>
     <div class="container mb-5">
       <div class="row g-5">
-        <div class="col-md-3" id="sidebar">
-          <h2 class="fs-5 mb-4">Add New Question</h2>
-          <form id="formNewQuestion">
-            <textarea
-              name="question"
-              class="form-control mb-3"
-              placeholder="Question"
-              rows="5"
-              required
-            ></textarea>
-            <input
-              type="text"
-              name="right_answer"
-              class="form-control bg-success mb-1"
-              placeholder="Right answer"
-              style="--bs-bg-opacity: 0.5"
-              required
-            />
-            <input
-              type="text"
-              name="option_answer_1"
-              class="form-control bg-danger mb-1"
-              placeholder="Other answer option"
-              style="--bs-bg-opacity: 0.5"
-              required
-            />
-            <input
-              type="text"
-              name="option_answer_2"
-              class="form-control bg-danger mb-1"
-              placeholder="Other answer option"
-              style="--bs-bg-opacity: 0.5"
-              required
-            />
-            <input
-              type="text"
-              name="option_answer_3"
-              class="form-control bg-danger mb-3"
-              placeholder="Other answer option"
-              style="--bs-bg-opacity: 0.5"
-              required
-            />
-            <button type="submit" class="btn btn-sm w-100 btn-primary">
-              Add
-            </button>
-          </form>
+        <div class="col-md-3">
+          <div id="sidebar" class="sticky-md-top py-3">
+            <h2 class="fs-5 mb-4">Add New Question</h2>
+            <form id="formNewQuestion">
+              <textarea
+                name="question"
+                class="form-control mb-3"
+                placeholder="Question"
+                rows="5"
+                required
+              ></textarea>
+              <input
+                type="text"
+                name="right_answer"
+                class="form-control bg-success mb-1"
+                placeholder="Right answer"
+                style="--bs-bg-opacity: 0.5"
+                required
+              />
+              <input
+                type="text"
+                name="option_answer_1"
+                class="form-control bg-danger mb-1"
+                placeholder="Other answer option"
+                style="--bs-bg-opacity: 0.5"
+                required
+              />
+              <input
+                type="text"
+                name="option_answer_2"
+                class="form-control bg-danger mb-1"
+                placeholder="Other answer option"
+                style="--bs-bg-opacity: 0.5"
+                required
+              />
+              <input
+                type="text"
+                name="option_answer_3"
+                class="form-control bg-danger mb-3"
+                placeholder="Other answer option"
+                style="--bs-bg-opacity: 0.5"
+                required
+              />
+              <button type="submit" class="btn btn-sm w-100 btn-primary">
+                Add
+              </button>
+            </form>
+          </div>
         </div>
         <div class="col-md-9" id="questionBank">
-          <h2 class="fs-5 mb-4">Question Bank</h2>
+          <h2 class="fs-5 mb-4 py-3">Question Bank</h2>
           <div class="row g-3" id="questionContainer">
             <!-- <div class="col-md-6">
               <div class="card">
