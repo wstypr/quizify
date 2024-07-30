@@ -3,15 +3,17 @@ import { Question } from "../types/entity";
 
 async function play() {
   const questions = await getAllQuestions();
-  const questionNum = questions.length;
+  const questionNum = Math.min(questions.length, 10);
   const questionNumArr = Array.from(Array(questionNum).keys());
   const shuffledQuestionNumArr = questionNumArr.sort(() => Math.random() - 0.5);
   renderNextQuestion(questions, shuffledQuestionNumArr.pop()!);
 
+  let questionAnswered = 0;
+  updateInfo();
+
   function renderNextQuestion(questions: Question[], index: number) {
     //   const nextQuestion = questions[index];
     const nextQuestion = questions[index];
-    console.log(index);
 
     const questionElement = document.getElementById("question")!;
     questionElement.textContent = nextQuestion.question;
@@ -62,8 +64,15 @@ async function play() {
     });
   }
 
+  function updateInfo() {
+    const infoElement = document.getElementById("info")!;
+    infoElement.textContent = `Question Answered : ${questionAnswered} / ${questionNum}`;
+  }
+
   function handleTrue() {
-    if (shuffledQuestionNumArr.length === 0) {
+    questionAnswered++;
+    updateInfo();
+    if (questionAnswered === questionNum) {
       showModal("YOU WIN 👏");
     }
     console.log("true");
