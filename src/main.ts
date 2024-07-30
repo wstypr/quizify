@@ -19,6 +19,8 @@ async function handleAdd(e: Event) {
 
 async function renderQuestions() {
   const questions = await getAllQuestions();
+  const info = document.getElementById("info")!;
+  info.textContent = `Question Bank (${questions.length} questions available)`;
   questions.forEach((question) => {
     const card = createQuestionItem(question, handleDelete);
     document.getElementById("questionContainer")?.append(card);

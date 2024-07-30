@@ -12,7 +12,6 @@ async function play() {
   updateInfo();
 
   function renderNextQuestion(questions: Question[], index: number) {
-    //   const nextQuestion = questions[index];
     const nextQuestion = questions[index];
 
     const questionElement = document.getElementById("question")!;
@@ -39,7 +38,8 @@ async function play() {
         "p-3",
         "rounded-4",
         "fs-5",
-        "border"
+        "border",
+        "h-100"
       );
 
       col.append(anscont);
